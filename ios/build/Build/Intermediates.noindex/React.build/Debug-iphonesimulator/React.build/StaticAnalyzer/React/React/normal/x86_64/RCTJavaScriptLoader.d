@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTJavaScriptLoader.mm \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTMultipartStreamReader.h \
+  /Users/larsson/test/react-native-css-modules-with-typescript-example/node_modules/react-native/React/Base/RCTPerformanceLogger.h

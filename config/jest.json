@@ -1,0 +1,35 @@
+{
+  "preset": "react-native-web",
+  "rootDir": "./../",
+  "verbose": true,
+  "transform": {
+    "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+    ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform",
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "moduleDirectories": ["node_modules", "src"],
+  "testRegex": "(/src/spec/.*|\\.(test|spec))\\.(ts|tsx)$",
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$",
+    "node_modules/(?!react-native|react-navigation)/"
+  ],
+  "testPathIgnorePatterns": ["/dist/", "/node_modules/", "/config/"],
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "globals": {
+    "window": {},
+    "ts-jest": {
+      "useBabelrc": true,
+      "tsConfigFile": "tsconfig.test.json"
+    }
+  },
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "**/*.{ts,tsx}",
+    "!**/*.{scss,d.ts}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageReporters": ["text"],
+  "setupFiles": ["./config/jest.stubs.js", "jest-canvas-mock"],
+  "setupTestFrameworkScriptFile": "./config/setupTests.js"
+}

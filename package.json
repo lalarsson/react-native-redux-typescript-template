@@ -1,0 +1,123 @@
+{
+  "name": "CSSModulesExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "tsc": "./node_modules/.bin/tsc --noEmit --project tsconfig.json",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "dev": "npm run web",
+    "dev:watch": "./node_modules/.bin/concurrently 'npm run concurrent:watch' 'npm run dev'",
+    "concurrent": "./node_modules/.bin/concurrently 'npm run test' 'npm run lint'",
+    "concurrent:watch": "./node_modules/.bin/nodemon  -e ts,tsx,scss,js --exec 'npm run concurrent'",
+    "test": "./node_modules/.bin/jest --config config/jest.json",
+    "test:watch": "./node_modules/.bin/jest --config config/jest.json --watch",
+    "prepush": "npm run lint & npm run tsc & npm run test",
+    "lint": "npm run tsc && ./node_modules/.bin/tslint --format stylish --project tslint.json && stylelint 'src/**/*.@(css|scss)'",
+    "web": "./node_modules/.bin/webpack-dev-server --mode development --config config/webpack.config.js",
+    "ios": "./node_modules/.bin/react-native run-ios",
+    "android": "./node_modules/.bin/react-native run-android"
+  },
+  "dependencies": {
+    "es6-shim": "^0.35.3",
+    "normalize-scss": "^7.0.1",
+    "react": "16.4.2",
+    "react-art": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-fontawesome": "^1.6.1",
+    "react-native": "0.56.0",
+    "react-native-fontawesome": "^5.7.0",
+    "react-native-web": "^0.8.9",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-observable": "^1.0.0",
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2",
+    "tslib": "^1.9.3",
+    "typesafe-actions": "^2.0.4",
+    "utility-types": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@types/enzyme": "^3.1.13",
+    "@types/jest": "^23.3.1",
+    "@types/react-native": "kristerkari/react-native-types-for-css-modules#v0.56.10",
+    "@types/react-fontawesome": "^1.6.4",
+    "@types/react-router-dom": "^4.3.0",
+    "@types/react-router-redux": "^5.0.15",
+    "@types/redux": "^3.6.0",
+    "autoprefixer": "^9.1.3",
+    "babel-core": "^7.0.0-beta",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-react-native-classname-to-style": "^1.2.1",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
+    "babel-preset-react": "^7.0.0-beta.3",
+    "babel-preset-react-native": "5.0.2",
+    "babel-runtime": "^7.0.0-beta",
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16.3": "^1.1.0",
+    "file-loader": "^2.0.0",
+    "jest": "^23.5.0",
+    "jest-canvas-mock": "^1.1.0",
+    "jest-css-modules-transform": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
+    "postcss": "^7.0.2",
+    "postcss-loader": "^3.0.0",
+    "react-hot-loader": "4.3.5",
+    "react-native-css-transformer": "^1.2.2",
+    "react-native-sass-transformer": "^1.2.3",
+    "react-native-types-for-css-modules": "github:kristerkari/react-native-types-for-css-modules#v0.56.0",
+    "react-native-typescript-transformer": "^1.2.10",
+    "react-test-renderer": "^16.4.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-react-native-css-modules": "^1.4.1",
+    "stylelint-react-native": "^2.0.0",
+    "ts-jest": "^23.1.4",
+    "ts-loader": "^4.5.0",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.1",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 11",
+    "Android >= 4.4",
+    "iOS >= 8"
+  ],
+  "jest": {
+    "preset": "react-native"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-react-native-css-modules",
+    "rules": {
+      "selector-class-pattern": "^[a-z][a-zA-Z0-9]*$",
+      "declaration-block-no-duplicate-properties": true,
+      "no-duplicate-selectors": true,
+      "no-extra-semicolons": true,
+      "unit-whitelist": [
+        "px",
+        "rem",
+        "deg",
+        "%"
+      ],
+      "no-eol-whitespace": true,
+      "no-missing-end-of-source-newline": true
+    }
+  }
+}
